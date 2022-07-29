@@ -38,19 +38,20 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <MainList/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from './components/HelloWorld';
+import MainList from './components/Main';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    MainList,
   },
 
   data: () => ({
@@ -58,3 +59,8 @@ export default {
   }),
 };
 </script>
+
+<style>
+  @import "./css/font.css";
+
+</style>
