@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.header {
+	background-color: #FFF !important;
+	border-bottom: 1px solid #F1F1F1 !important;
+}
+
+.header__tit{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 16px;
+	font-weight: 700;
+	color: #202020;
+}
+
+.header__ico_back{
+	width: 12px;
+	height: auto;
+	color: #909090;
+}
+.header__ico_bars{
+	width: 18px;
+	height: auto;
+	color: #909090;
+}

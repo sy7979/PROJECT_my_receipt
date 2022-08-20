@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.form{
+	position: relative;
+}
+.form__form{
+	margin-top: 16px;
+}
+.form__flex_row{
+	display: flex;
+}
+
+/* 이용약관 */
+.form__agree{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 24px;
+	margin-top: 24px;
+	overflow: hidden;
+}
+.form__agree_policy_btn{
+	font-weight: 700;
+	color: #202020;
+	text-decoration: underline;
+}
+
+.form__join_btn{
+	margin-top: 16px;
+	padding: 4px;
+	text-align: center;
+	color: #909090;
+	cursor: pointer;
+}
+.form__join_btn:active{
+	color: #505050;
+}
+
+/* 폼 버튼 */
+.form__btn_wrap{
+	display: flex;
+	align-items: center;
+}
+.form__btn_small{
+	width: 120px;
+	margin-right: 12px;
+}
+.form__btn_large{
+	width: 100%;
+}
