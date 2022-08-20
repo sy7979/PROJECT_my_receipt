@@ -15,10 +15,10 @@
         v-if="headerLogo"
       >
         <!-- 로고 -->
-        <logo-img
+        <logo-compo
           :width="'80'"
           :type="'mark'"
-        ></logo-img>
+        ></logo-compo>
         <!-- // 로고 -->
       </router-link>
       <!-- // 홈 로고 -->
@@ -51,23 +51,23 @@
     </v-app-bar>
 
     <!-- 메뉴 -->
-    <nav-drawer
+    <drawer-compo
       :drawerProps="drawer"
       @toggleDrawer="toggleDrawer"
-    ></nav-drawer>
+    ></drawer-compo>
     <!-- // 메뉴 -->
   </div>
 </template>
 
 <script>
-  import LogoImg from '@/components/LogoImg.vue';
-  import NavDrawer from '@/components/NavDrawer.vue';
+  import LogoCompo from '@/components/LogoCompo.vue';
+  import DrawerCompo from '@/components/DrawerCompo.vue';
 
   export default {
-    name: 'MainHeader',
+    name: 'HeaderCompo',
     components: {
-      LogoImg,
-      NavDrawer,
+      LogoCompo,
+      DrawerCompo,
     },
     props: {
       headerLogo: Boolean,

@@ -2,11 +2,11 @@
   <div class="lt_container">
     <div class="lt_content">
       <!-- 헤더 -->
-      <main-header 
+      <header-compo 
         :headerBack="true"
         :headerMenu="true"
         :headerTit="'글쓰기'"
-      ></main-header>
+      ></header-compo>
       <!-- // 헤더 -->
 
       <!-- 글쓰기 폼 -->
@@ -130,20 +130,20 @@
               @click="dialog = !dialog"
             >
               <!-- 버튼 : 취소 -->
-              <default-button
+              <btn-compo
                 :valid="true"
                 :btnTxt="'취소'"
                 :outline="'btn-outline'"
-              ></default-button>
+              ></btn-compo>
               <!-- // 버튼 : 취소 -->
             </div>
             <div class="form__btn_large">
               <!-- 버튼 : 등록 -->
-              <default-button
+              <btn-compo
                 :clickEvent="validate"
                 :valid="valid"
                 :btnTxt="'등록'"
-              ></default-button>
+              ></btn-compo>
               <!-- // 버튼 : 등록 -->
             </div>
           </div>
@@ -152,28 +152,28 @@
       <!-- // 글쓰기 폼 -->
 
       <!-- 팝업 -->
-      <pop-up
+      <pop-compo
         :title="'진짜 취소 하겠습니까???'"
         :content="'그러면 글 저장 안된다구!!'"
         :btn1="'계속 작성하기'"
         :btn2="'나가기'"
         :dialogProps="dialog"
-      ></pop-up>
+      ></pop-compo>
     </div> 
   </div>
 </template>
 
 <script>
-  import DefaultButton from '@/components/DefaultButton.vue';
-  import MainHeader from '@/components/MainHeader.vue';
-  import PopUp from '@/components/PopUp.vue'
+  import BtnCompo from '@/components/BtnCompo.vue';
+  import HeaderCompo from '@/components/HeaderCompo.vue';
+  import PopCompo from '@/components/PopCompo.vue'
 
   export default {
-    name: 'WriteReceipt',
+    name: 'WritePage',
     components: {
-      DefaultButton,
-      MainHeader,
-      PopUp
+      BtnCompo,
+      HeaderCompo,
+      PopCompo
     },
     data: () => ({
       // primary color

@@ -9,11 +9,11 @@
     v-model="drawer"
   >
     <!-- 로고 -->
-    <logo-img
+    <logo-compo
       :width="'60'"
       :type="'logo'"
       class="py-4"
-    ></logo-img>
+    ></logo-compo>
     <!-- // 로고 -->
     <v-list
       dense
@@ -43,12 +43,12 @@
 </template>
 
 <script>
-  import LogoImg from '@/components/LogoImg.vue';
+  import LogoCompo from '@/components/LogoCompo.vue';
 
   export default {
-    name: 'NavDrawer',
+    name: 'DrawerCompo',
     components: {
-      LogoImg,
+      LogoCompo,
     },
     props: {
       drawerProps: Boolean,

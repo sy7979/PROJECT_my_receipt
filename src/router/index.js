@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import MyReceipt from '../pages/MyReceipt.vue';
-import LogIn from '../pages/LogIn.vue';
-import JoinIn from '../pages/JoinIn.vue';
-import WriteReceipt from '../pages/WriteReceipt.vue';
+import MainPage from '../pages/MainPage.vue';
+import LoginPage from '../pages/LoginPage.vue';
+import JoinPage from '../pages/JoinPage.vue';
+import WritePage from '../pages/WritePage.vue';
 
 //Vue와 VueRouter 연결
 Vue.use(VueRouter);
@@ -12,25 +12,25 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
-    name: 'MyReceipt',
-    component: MyReceipt,
+    name: 'MainPage',
+    component: MainPage,
   },
   {
     path: '/login',
-    name: 'LogIn',
-    component: LogIn,
+    name: 'LoginPage',
+    component: LoginPage,
 
   },
   {
     path: '/join',
-    name: 'JoinIn',
-    component: JoinIn,
+    name: 'JoinPage',
+    component: JoinPage,
 
   },
   {
     path: '/write',
-    name: 'WriteReceipt',
-    component: WriteReceipt,
+    name: 'WritePage',
+    component: WritePage,
 
   },
 ];

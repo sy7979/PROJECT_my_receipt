@@ -10,7 +10,7 @@
 
 <script>
   export default {
-    name: "DefaultButton",
+    name: "BtnCompo",
     props: {
       clickEvent: Function,
       valid: Boolean,
@@ -21,5 +21,5 @@
 </script>
 
 <style scoped>
-@import '@/css/btn.css';
+  @import '@/css/btn.css';
 </style>

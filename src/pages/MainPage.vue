@@ -2,10 +2,10 @@
   <div class="lt_container lt_container-bg_fa">
     <div class="lt_content">
       <!-- 헤더 -->
-      <main-header 
+      <header-compo 
         :headerLogo="true"
         :headerMenu="true"
-      ></main-header>
+      ></header-compo>
       <!-- // 헤더 -->
       
       <!-- 영수증 -->
@@ -112,27 +112,27 @@
       <!-- // 영수증 -->
 
       <!-- 팝업 -->
-      <pop-up
+      <pop-compo
         :title="'삭제하시겠습니까?'"
         :content="'삭제된 글은 다시 복구할 수 없습니다.'"
         :btn1="'삭제'"
         :btn2="'취소'"
         :dialogProps="dialog"
-      ></pop-up>
+      ></pop-compo>
       <!-- // 팝업 -->
     </div>
   </div>
 </template>
 
 <script>
-  import MainHeader from '@/components/MainHeader.vue';
-  import PopUp from '@/components/PopUp.vue'
+  import HeaderCompo from '@/components/HeaderCompo.vue';
+  import PopCompo from '@/components/PopCompo.vue'
 
   export default {
-    name: 'MyReceipt',
+    name: 'MainPage',
     components: {
-      MainHeader,
-      PopUp,
+      HeaderCompo,
+      PopCompo,
     },
     data () {
       return {

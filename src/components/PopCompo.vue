@@ -26,7 +26,7 @@
 
 <script>
   export default {
-    name: 'PopUp',
+    name: 'PopCompo',
     props: {
       dialogProps: Boolean,
       title: String,

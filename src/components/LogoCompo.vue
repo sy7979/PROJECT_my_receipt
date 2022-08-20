@@ -21,14 +21,10 @@
 
 <script>
   export default {
-    name: "LogoImg",
+    name: "LogoCompo",
     props: {
       width: String,
       type: String,
     },
   }
 </script>
-
-<style scoped>
-
-</style>

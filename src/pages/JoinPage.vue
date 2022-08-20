@@ -2,10 +2,10 @@
   <div class="lt_container">
     <div class="lt_content">
       <!-- 헤더 -->
-      <main-header 
+      <header-compo 
         :headerBack="true"
         :headerTit="'회원가입'"
-      ></main-header>
+      ></header-compo>
       <!-- // 헤더 -->
 
       <!-- 회원가입 폼 -->
@@ -154,12 +154,12 @@
           <!-- // 이용약관 동의 -->
 
           <!-- 버튼 : 회원가입 -->
-          <default-button
+          <btn-compo
             :clickEvent="validate"
             :valid="valid"
             :btnTxt="'회원가입'"
             class="mt-4"
-          ></default-button>
+          ></btn-compo>
           <!-- // 회원가입 버튼 -->
         </v-form>
       </div>
@@ -169,14 +169,14 @@
 </template>
 
 <script>
-  import DefaultButton from '@/components/DefaultButton.vue';
-  import MainHeader from '@/components/MainHeader.vue';
+  import BtnCompo from '@/components/BtnCompo.vue';
+  import HeaderCompo from '@/components/HeaderCompo.vue';
 
   export default {
-    name: 'JoinIn',
+    name: 'JoinPage',
     components: {
-      MainHeader,
-      DefaultButton,
+      HeaderCompo,
+      BtnCompo,
     },
     data: () => ({
       // primary color

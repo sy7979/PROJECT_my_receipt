@@ -3,11 +3,11 @@
     <div class="lt_content">
 
       <!-- 로고 -->
-      <logo-img
+      <logo-compo
         :width="'100'"
         :type="'logo'"
         class="mb-12"
-      ></logo-img>
+      ></logo-compo>
       <!-- // 로고 -->
 
       <!-- 로그인 폼 -->
@@ -44,12 +44,12 @@
           <!-- // 비밀번호 -->
 
           <!-- // 버튼 : 로그인 -->
-          <default-button
+          <btn-comp
             :clickEvent="validate"
             :valid="valid"
             :btnTxt="'로그인'"
             class="mt-4"
-          ></default-button>
+          ></btn-comp>
           <!-- // 버튼 : 로그인 -->
 
           <!-- 회원가입 -->
@@ -65,14 +65,14 @@
 </template>
 
 <script>
-  import DefaultButton from '@/components/DefaultButton.vue';
-  import LogoImg from '@/components/LogoImg.vue';
+  import BtnComp from '@/components/BtnCompo.vue';
+  import LogoCompo from '@/components/LogoCompo.vue';
 
   export default {
-    name: 'LogIn',
+    name: 'LoginPage',
     components: {
-      DefaultButton,
-      LogoImg,
+      BtnComp,
+      LogoCompo,
     },
     data: () => ({
       // primary color
